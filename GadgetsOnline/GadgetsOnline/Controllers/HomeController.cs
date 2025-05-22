@@ -13,6 +13,7 @@ namespace GadgetsOnline.Controllers
 
         public ActionResult Index()
         {            
+            //default controller
             inventory = new Inventory();
             var products = inventory.GetBestSellers(6);
             return View(products);
